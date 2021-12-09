@@ -1,0 +1,206 @@
+@charset="utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    background: #000000;
+    color: #FFFFFF;
+    font-family: kozuka-gothic-pro, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    background-image: url(topimagH1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.scroll {
+    position: absolute;
+    bottom: 50%;
+    width: 3em;
+    right: 10px;
+    height: 1em;
+    color: #FFFFFF;
+
+    span {
+        color: #FFFFFF;
+        text-align: center;
+    }
+}
+
+.scrollP {
+    font-size: 20px;
+    transform: rotate(90deg);
+}
+
+.arrow {
+    position: absolute;
+    top: 3.5em;
+    left: 1.25em;
+    animation: 2s arrow-animation infinite ease-in-out;
+    width: 0;
+    height: 5em;
+    border: .5px solid #FFFFFF;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: -1px;
+        height: 10px;
+        left: -2px;
+        width: 1px;
+        height: 10px;
+        border-top: 10px solid #FFFFFF;
+        border-left: 2px solid transparent;
+        border-right: 2px solid transparent;
+    }
+}
+
+@keyframes arrow-animation {
+    0% {
+        height: 1em;
+    }
+
+    66% {
+        height: 5em;
+    }
+}
+
+header {
+    padding-top: 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+header li {
+    display: inline;
+    margin: 20px 50px;
+    font-size: 30px;
+}
+
+.title {
+    font-family: kozuka-gothic-pro, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+header li:hover {
+    border-bottom: 3px solid #FFFFFF;
+    color: #808080;
+}
+
+main {
+    background: rgba(0%, 0%, 0%, 0.9);
+    padding-top: 5px;
+    margin-top: 600px;
+    text-align: center;
+}
+
+main .title {
+    margin: 50px 0;
+}
+
+main p {
+    margin: 30px 0;
+}
+
+main a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+main a:hover {
+    color: #808080;
+}
+
+main ul {
+    padding: 70px 0;
+}
+
+main li {
+    display: inline;
+    margin: 0 20px;
+}
+
+footer {
+    background: rgb(145, 141, 138);
+    padding-top: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+footer a:hover {
+    color: #303030;
+}
+
+footer ul {
+    margin-left: 300px;
+    padding-bottom: 50px;
+}
+
+footer li {
+    margin: 10px 0;
+}
+
+footer .aHorror {
+    color: #A30000;
+}
+
+footer .aHorror:hover {
+    color: #560000;
+}
+/*画像のフィルター関連*/
+.indexsmn {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    border: 1px solid #202020;
+}
+
+.indexsmn:hover {
+    -webkit-filter: grayscale(40%);
+    filter: grayscale(40%);
+}
+.start {
+	background: #000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+}
+.start img{
+    width: 300px;
+    height: auto;
+}
+.start p {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+/*    transform: rotateY(360deg);*/
+	display: none;
+	z-index: 9999;
+}
+@media screen and (max-width:1130px) {}
+
+@media screen and (max-width:599px) {}
