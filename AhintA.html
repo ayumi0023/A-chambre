@@ -1,0 +1,312 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+
+    <meta http-equiv="content-type" charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>A.HintAnswer</title>
+    <link rel="stylesheet" type="text/css" href="Aghc.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        (function(d) {
+            var config = {
+                    kitId: 'tbp5ksz',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+
+    </script>
+</head>
+
+<body>
+    <div id="top"></div>
+
+    <header>
+        <nav>
+            <a href="index.html">
+                <li class="title">Chambre</li>
+            </a>
+            <a href="Agame.html">
+                <li>Game/Stage</li>
+            </a>
+            <a href="AhintA.html">
+                <li>Hint/Answer</li>
+            </a>
+            <a href="Acontact.html">
+                <li>Contact</li>
+            </a>
+        </nav>
+    </header>
+
+
+    <main>
+        <p class="title">Hint/Answer</p>
+        <ul>
+            <li>Halloween / ハロウィン</li>
+            <li>Level ★★★☆☆</li>
+            <li><img class="hintsmn" src="AChambre1smn.JPG" width="300" height="200" border=1></li>
+
+        </ul>
+
+        <ul>
+            <li>Witch’s Garden / 魔女の庭</li>
+            <li>Level ★★★★☆</li>
+            <li><img class="hintsmn" src="AChambre2smn.JPG" width="300" height="200" border=1></li>
+
+        </ul>
+<!--
+        <ul>
+            <li>??? / ???</li>
+            <li>Level ★★★★★</li>
+            <li><img class="hintsmn" src="css/TopimgH.jpg" width="300" height="200" border=1></li>
+
+        </ul>
+-->
+
+        <!--ヒント答え表-->
+        <table>
+            <!--  一段目ヒント-->
+            <tr>
+                <td>
+                    <h2 id="hint1"></h2>
+                    <details>
+                        <summary>ハロウィン / ヒント</summary>
+                        <details class="dtitle">
+                            <summary>・カボチャの証言</summary>
+                            <p>3つのカボチャの中には1つ嘘をついています。「多分、絶対、100％」という言葉は関係ないかもしれません。</p>
+                        </details>
+                        <details class="dtitle">
+                            <summary>・本とカボチャ</summary>
+                            <p>どのカボチャが何色の本に該当するかどこかに示しているはずです。</p>
+                        </details>
+                        <details class="dtitle">
+                            <summary>・パスワード</summary>
+                            <p>正確な本から照らし合わせてください。部屋のどこかに5文字のワードが強調されているかもしれません。</p>
+                        </details>
+                        <details class="dtitle">
+                            <summary>・小箱</summary>
+                            <p>パスワード入力後、本棚の小箱が変化しているはずです。また部屋のどこかで何かが変化しています。注意して調べてみましょう。</p>
+                        </details>
+                    </details>
+                </td>
+
+                <td>
+                    <h2 id="hint2"></h2>
+                    <details>
+                        <summary>魔女の庭 / ヒント</summary>
+                        <details class="dtitle">
+                            <summary>・リンゴ</summary>
+                            <p>魔女といえばリンゴですが、リンゴといえば...？</p>
+                        </details>
+                        <details class="dtitle">
+                            <summary>・試験管の数字</summary>
+                            <p>試験管の数字、本のヒントを頼りに解くと何かが起きます。</p>
+                        </details>
+                        <details class="dtitle">
+                            <summary>・馬の銅像</summary>
+                            <p>どこかにヒントが書かれています。</p>
+                        </details>
+                        <details class="dtitle">
+                            <summary>・鳥籠</summary>
+                            <p>何かを解くと開くかもしれません。</p>
+                        </details>
+                        <details class="dtitle">
+                            <summary>・箱</summary>
+                            <p>魔女の庭なのでどこかに”あれ”があるかもしれません。</p>
+                        </details>
+                    </details>
+
+                </td>
+<!--
+                <td>
+                    <h2 id="hint3"></h2>
+                    <details>
+                        <summary>??? / ヒント</summary>
+                        <details class="dtitle">
+                            <summary>・フレッシュミルク</summary>
+                            <p>ミルクを使用できるものが部屋に隠されています。ヒントはラグを調べてください。</p>
+                        </details>
+                        <details class="dtitle">
+                            <summary>・パスワードの順番</summary>
+                            <p>どこかに書いてあるかもしれません。画面下部を集中して見てください。</p>
+                        </details>
+                        <details class="dtitle">
+                            <summary>・パスワード</summary>
+                            <p>額縁に書いてある数字と数字の後ろの色がヒントとなります。</p>
+                        </details>
+                        <details class="dtitle">
+                            <summary>・謎の鍵</summary>
+                            <p>パスワードを解いた後、部屋を見てみましょう。解く前と違う部分があります。</p>
+                        </details>
+                        <details class="dtitle">
+                            <summary>・氷漬けの鍵</summary>
+                            <p>溶かすために必要なものを探しましょう。</p>
+                        </details>
+                    </details>
+                </td>
+-->
+            </tr>
+            <!--    二段目答え    -->
+            <tr>
+                <td>
+                    <h2 id="ans1"></h2>
+                    <details>
+                        <summary>ハロウィン / 答え</summary>
+                        <details class="dtitle">
+                            <summary>・カボチャの証言</summary>
+                            <p>3つのカボチャが言う「多分、絶対、100％」という言葉は関係なく、Bのカボチャが嘘をついている。</p>
+                        </details>
+                        <details class="dtitle">
+                            <summary>・本とカボチャ</summary>
+                            <p>どのカボチャが何色の本に該当するのか、テーブルのコップの位置が示している。Aのカボチャは青、Bのカボチャは緑、Cのカボチャは赤。</p>
+                        </details>
+                        <details class="dtitle">
+                            <summary>・パスワード</summary>
+                            <p>ソファの上の飾り「HAPPY」というワードと正確な本から照らし合わせると、H＝4、A＝2、P＝7、Y＝9で「42779」が答えとなる。</p>
+                        </details>
+                        <details class="dtitle">
+                            <summary>・小箱</summary>
+                            <p>パスワード入力後、本棚一番下の小箱が増える。テーブル上のピザの箱から鍵を入手。増えた小箱に使用すると大きいキャンディが手に入る。</p>
+                        </details>
+                        <details class="dtitle">
+                            <summary>・キャンディ</summary>
+                            <p>パスワード入力後、窓側のカボチャが微笑んでいるのを確認。「微笑んだカボチャは大きいお菓子が好み。」と本に書いてあるため、大きいキャンディを入手後にカボチャをクリックすると綺麗な鍵がもらえる。最後にドアを調べて脱出成功。</p>
+                        </details>
+                        <details class="dtitle">
+                            <summary>・下から二段目の2つのキャンディ</summary>
+                            <p>様々なアイテムを使って入手する「キャンディ」「小さなキャンディ」はカボチャの好みではないので、取らなくても脱出できる。</p>
+                        </details>
+                    </details>
+                </td>
+                <td>
+                    <h2 id="ans2"></h2>
+                    <details>
+                        <summary>魔女の庭 / 答え</summary>
+                        <details class="dtitle">
+                            <summary>・リンゴ</summary>
+                            <p>リンゴを取得後、窯を調べるとリンゴを落としてしまうが、脱出に影響はない。</p>
+                        </details>
+                        <details class="dtitle">
+                            <summary>・試験管の数字</summary>
+                            <p><br>
+                            額縁上段の数字「6317 2584」は試験管の数字を表している。<br>
+                            下段の数字が赤い色は足して、青い色は引くと「4480 5529」、これを試験管通りに並べると「8549 5402」。<br>
+                            本には”数字の大きい試験から調べろ”と書いてあるので、「2045 9458」が一つ目のパスワードとなる。</p>
+                        </details>
+                        <details class="dtitle">
+                            <summary>・馬の銅像</summary>
+                            <p>馬の向きを見る。初期は右左左右左、8桁のパスワード入力後、真ん中の馬の向きが変わるため右左右右左となる。<br>
+                            本棚のメモに書いてあるヒントは”反対かつ右から並びなおせ”となっているので反対「左右左左右」を右側から入力するとパスワードを解くことができる。</p>
+                        </details>
+                        <details class="dtitle">
+                            <summary>・鳥籠</summary>
+                            <p>銅像の謎を解くと鳥籠が開く。中から箱が出てくる。</p>
+                        </details>
+                        <details class="dtitle">
+                            <summary>・箱</summary>
+                            <p>机の上の杖を使って箱を壊すと綺麗な鍵がでてくる。最後にドアを調べて脱出成功。</p>
+                        </details>
+                    </details>
+                </td>
+
+
+<!--                <td>-->
+                    <!--
+                    <div class="hidden_box">
+                        <h2 id="ans3"></h2>
+                        <label for="label6">上級 / 答え</label>
+                        <input type="checkbox" id="label6" />
+                        <div class="hidden_show">
+                                非表示部分   
+                            <p>壷を調べると鍵を入手。小さな木箱に鍵を使用できるのでクリックすると金の鍵を入手。
+                                最後にドアを調べて脱出成功。6
+                            </p>
+-->
+                    <!--ここまで-->
+                    <!--
+                        </div>
+                    </div>
+-->
+<!--
+                    <h2 id="ans3"></h2>
+                    <details class="dmain">
+                        <summary>??? / 答え</summary>
+                        <details class="dtitle">
+                            <summary>・フレッシュミルク</summary>
+                            <p>キッチンの4つ並んでいる一番左の壷からフレッシュミルクを入手。机の積まれた本と本の間にマグカップの取っ手があるので、クリックするとコーヒーを飲むことができる。</p>
+                        </details>
+                        <details class="dtitle">
+                            <summary>・パスワードの順番</summary>
+                            <p>額縁側の画面に移動する。右下に濃い影があるのでクリックするとパスワードの順番が書かれたメモが出てくる。</p>
+                        </details>
+                        <details class="dtitle">
+                            <summary>・パスワード</summary>
+                            <p>本に書かれた色と額縁の内容を照らし合わせて解くことができる。<br>
+                                T＝赤＝2、A＝青＝3、D＝黒＝0<br>
+                                額縁の問いでは、
+                                2+3＝5・赤+青＝紫<br>
+                                5+1＝6・紫+黄＝茶<br>
+                                5＝紫＝M<br>
+                                冷蔵庫の横のメモには「F＝茶」と書いてあるので<br>
+                                6＝茶＝F
+                                パスワードの順番は「MAFMTD」なので答えは「536520」となる。
+                            </p>
+                        </details>
+                        <details class="dtitle">
+                            <summary>・謎の鍵</summary>
+                            <p>パスワードを解くとベッドの上に謎の小箱が出てくるので鍵を使用する。</p>
+                        </details>
+                        <details class="dtitle">
+                            <summary>・氷漬けの鍵</summary>
+                            <p>小箱から出てきたメモを使用すると氷漬けの鍵が出てくるので机の上にあるライターで溶かす。綺麗な鍵の入手後、最後にドアを調べて脱出成功。</p>
+                        </details>
+                    </details>
+                </td>
+-->
+            </tr>
+
+        </table>
+    </main>
+    <footer>
+        <ul>
+
+            <li><a href="#top" class="aHorror">Top</a></li>
+            <li><a href="Aindex.html" class="aHorror">AnotherChambreTop</a></li>
+            <li><a href="Agame.html" class="aHorror">Game/Stage</a></li>
+            <li><a href="#top" class="aHorror">Hint/Answer</a></li>
+            <li><a href="Acontact.html" class="aHorror">Contact</a></li>
+            <li><a href="https://ayumi0023.github.io/N-chambre/index.html">NormalChambre</a></li>
+        </ul>
+        <small>©2021graduationAN</small>
+    </footer>
+
+
+    <script type="text/javascript" src="topanimation.js"></script>
+
+</body>
+</html>
