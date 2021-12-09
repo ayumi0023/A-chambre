@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+
+    <meta http-equiv="content-type" charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>A.Game</title>
+    <link rel="stylesheet" type="text/css" href="Aghc.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        (function(d) {
+            var config = {
+                    kitId: 'tbp5ksz',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+
+    </script>
+</head>
+
+<body>
+    <div id="top"></div>
+
+    <header>
+        <nav>
+            <a href="index.html">
+                <li class="title">Chambre</li>
+            </a>
+            <a href="Agame.html">
+                <li>Game/Stage</li>
+            </a>
+            <a href="AhintA.html">
+                <li>Hint/Answer</li>
+            </a>
+            <a href="Acontact.html">
+                <li>Contact</li>
+            </a>
+        </nav>
+    </header>
+
+
+    <main>
+        <p class="title">Game</p>
+        <p>先にノーマルステージのプレイをお勧めします。</p>
+        <p><a href="https://ayumi0023.github.io/N-chambre/game.html">ノーマルステージ選択画面へ</a></p>
+        <br>
+        <p>ステージを選択してください。<br>画像をクリックするとゲーム画面へ移動します。<br>可能であればGoogleChromeの環境でプレイしてください。</p>
+        <ul>
+            <li>Halloween / ハロウィン</li>
+            <li>Level ★★★☆☆</li>
+            <li><a href="https://unityroom.com/games/chambrehalloween" target="_blank" rel="noopener noreferrer"><img class="indexsmn" src="AChambre1smn.JPG" width="300" height="200" border=1></a></li>
+            <li><a href="AhintA.html#hint1">ヒントを見る</a></li>
+            <li><a href="AhintA.html#ans1">答えを見る</a></li>
+        </ul>
+        <ul>
+            <li>Witch’s Garden / 魔女の庭</li>
+            <li>Level ★★★★☆</li>
+            <li><a href="https://unityroom.com/games/chambrewitchsgarden" target="_blank" rel="noopener noreferrer"><img class="indexsmn" src="AChambre2smn.JPG" width="300" height="200" border=1></a></li>
+            <li><a href="AhintA.html#hint2">ヒントを見る</a></li>
+            <li><a href="AhintA.html#ans2">答えを見る</a></li>
+        </ul>
+<!--
+        <ul>
+            <li>??? / ???</li>
+            <li>Level ★★★★★</li>
+            <li><a href="" target="_blank" rel="noopener noreferrer"><img class="indexsmn" src="css/TopimgH.jpg" width="300" height="200" border=1></a></li>
+            <li><a href="hintAHorror.html#hint3">ヒントを見る</a></li>
+            <li><a href="hintAHorror.html#ans3">答えを見る</a></li>
+        </ul>
+-->
+
+
+    </main>
+    <footer>
+        <ul>
+
+            <li><a href="#top" class="aHorror">Top</a></li>
+            <li><a href="index.html" class="aHorror">AnotherChambreTop</a></li>
+            <li><a href="#top" class="aHorror">Game/Stage</a></li>
+            <li><a href="AhintA.html" class="aHorror">Hint/Answer</a></li>
+            <li><a href="Acontact.html" class="aHorror">Contact</a></li>
+            <li><a href="https://ayumi0023.github.io/N-chambre/index.html">NormalChambre</a></li>
+        </ul>
+        <small>©2021graduationAN</small>
+    </footer>
+
+
+    <script type="text/javascript" src="topanimation.js"></script>
+
+</body>
+</html>
